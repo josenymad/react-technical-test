@@ -10,11 +10,18 @@ exports[`App renders correctly 1`] = `
       class="app__nasa-logo"
       src="nasa-worm-logo.jpg"
     />
-    <input
-      class="search__input"
-      placeholder="Enter image keywords here"
-      type="search"
-    />
+    <form>
+      <input
+        class="search__input"
+        placeholder="Enter image keywords here"
+        type="search"
+      />
+      <input
+        class="search__button"
+        type="submit"
+        value="Search"
+      />
+    </form>
   </div>
 </DocumentFragment>
 `;

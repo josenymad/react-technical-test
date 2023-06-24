@@ -2,10 +2,17 @@
 
 exports[`Search renders correctly 1`] = `
 <DocumentFragment>
-  <input
-    class="search__input"
-    placeholder="Enter image keywords here"
-    type="search"
-  />
+  <form>
+    <input
+      class="search__input"
+      placeholder="Enter image keywords here"
+      type="search"
+    />
+    <input
+      class="search__button"
+      type="submit"
+      value="Search"
+    />
+  </form>
 </DocumentFragment>
 `;

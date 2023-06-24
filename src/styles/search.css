@@ -1,3 +1,4 @@
 .search__input {
-    width: 15vw;
+    width: min-content;
+    margin-right: 1.5vw;
 }

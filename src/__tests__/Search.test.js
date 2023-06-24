@@ -16,5 +16,21 @@ describe("Search", () => {
 
         expect(searchInput).toBeInTheDocument();
     });
+
+    it("has a submit button", () => {
+        render(<Search />);
+
+        const searchButton = screen.getAllByRole("button");
+
+        expect(searchButton).toHaveLength(1);
+    });
+
+    it("has a submit button displaying Search", () => {
+        render(<Search />);
+
+        const searchButton = screen.getByRole("button");
+
+        expect(searchButton).toHaveDisplayValue("Search");
+    });
 });
 
