@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Results renders correctly 1`] = `
+<DocumentFragment>
+  <p>
+    Search Results
+  </p>
+  <img
+    alt="Result 0"
+    src="../images/testImage1.jpeg"
+  />
+  <img
+    alt="Result 1"
+    src="../images/testImage2.jpeg"
+  />
+  <img
+    alt="Result 2"
+    src="../images/testImage3.jpeg"
+  />
+</DocumentFragment>
+`;

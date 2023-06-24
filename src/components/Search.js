@@ -7,14 +7,19 @@ const Search = ({ setSearchResults }) => {
 
   const handleInputChange = (event) => setValue(event.target.value);
 
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    setSearchResults(getImages(value));
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setSearchResults(await getImages(value));
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input className="search__input" type="search" placeholder="Enter image keywords here" onChange={handleInputChange} />
+      <input
+        className="search__input"
+        type="search"
+        placeholder="Enter image keywords here"
+        onChange={handleInputChange}
+      />
       <input className="search__button" type="submit" value="Search" />
     </form>
   );

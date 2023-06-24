@@ -22,6 +22,9 @@ exports[`App renders correctly 1`] = `
         value="Search"
       />
     </form>
+    <p>
+      Have you searched yet? Either there's no results, or start exploring!
+    </p>
   </div>
 </DocumentFragment>
 `;
