@@ -2,38 +2,42 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import SearchResults from "../components/SearchResults";
 
-describe("Search Results" , () => {
-    const validProps = [
-        "../images/testImage1.jpeg", "../images/testImage2.jpeg", "../images/testImage3.jpeg"
-    ]
+describe("Search Results", () => {
+  const validProps = [
+    "../images/testImage1.jpeg",
+    "../images/testImage2.jpeg",
+    "../images/testImage3.jpeg",
+  ];
 
-    it("renders correctly", () => {
-        const { asFragment } = render(<SearchResults searchResults={validProps}/>);
+  it("renders correctly", () => {
+    const { asFragment } = render(<SearchResults searchResults={validProps} />);
 
-        expect(asFragment()).toMatchSnapshot();
-    });
+    expect(asFragment()).toMatchSnapshot();
+  });
 
-    it("renders the right number of images", () => {
-        render(<SearchResults searchResults={validProps}/>);
+  it("renders the right number of images", () => {
+    render(<SearchResults searchResults={validProps} />);
 
-        const images = screen.getAllByRole("img");
+    const images = screen.getAllByRole("img");
 
-        expect(images).toHaveLength(3);
-    });
+    expect(images).toHaveLength(3);
+  });
 
-    it("renders 'Search Results' after searching", () => {
-        render(<SearchResults searchResults={validProps}/>);
+  it("renders 'Search Results' after searching", () => {
+    render(<SearchResults searchResults={validProps} />);
 
-        const text = screen.getByText("Search Results");
+    const text = screen.getByText("Search Results");
 
-        expect(text).toBeInTheDocument();
-    });
+    expect(text).toBeInTheDocument();
+  });
 
-    it("renders message if no results or no search", () => {
-        render(<SearchResults searchResults={[]}/>);
+  it("renders message if no results or no search", () => {
+    render(<SearchResults searchResults={[]} />);
 
-        const text = screen.getByText("Have you searched yet? Either there's no results, or start exploring!");
+    const text = screen.getByText(
+      "Have you searched yet? Either there's no results, or start exploring!"
+    );
 
-        expect(text).toBeInTheDocument();
-    });
+    expect(text).toBeInTheDocument();
+  });
 });

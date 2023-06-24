@@ -14,7 +14,7 @@ const App = () => {
         alt="nasa-logo"
       />
       <Search setSearchResults={setSearchResults} />
-      <SearchResults searchResults={searchResults}/>
+      <SearchResults searchResults={searchResults} />
     </div>
   );
 };

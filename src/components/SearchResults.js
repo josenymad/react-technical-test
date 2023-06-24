@@ -13,9 +13,11 @@ const SearchResults = ({ searchResults }) => {
   return (
     <>
       <p>Search Results</p>
-      {searchResults.map((result, index) => (
-        <img src={result} alt={`Result ${index}`} key={result} />
-      ))}
+      <div className="container">
+        {searchResults.map((result, index) => (
+          <img src={result} alt={`Result ${index}`} key={result} />
+        ))}
+      </div>
     </>
   );
 };
