@@ -4,7 +4,7 @@ import "../styles/search.css";
 const Search = () => {
   return (
     <>
-      <input className="search__input" type="text" />
+      <input className="search__input" type="search" placeholder="Enter image keywords here" />
     </>
   );
 };
