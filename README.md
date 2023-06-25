@@ -25,6 +25,14 @@ With more time, I would've added an option for the user to receive more than jus
 
 The API can return audio and video media too, so I would've liked to give the user the option to choose between different media types (or all media types) to be received.
 
+## Demo
+
+
+
+https://github.com/josenymad/react-technical-test/assets/124208499/c082542c-4253-4267-9ab5-400e64479047
+
+
+
 ### Author
 
 Jose Wills
