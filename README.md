@@ -35,4 +35,4 @@ https://github.com/josenymad/react-technical-test/assets/124208499/c082542c-4253
 
 ### Author
 
-Jose Wills
+[Jose Wills](www.josewills.com)
