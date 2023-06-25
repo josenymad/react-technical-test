@@ -1,6 +1,26 @@
 .container {
   display: grid;
-  grid-template-columns: auto;
+  grid: 1fr 1fr / repeat(4, 1fr) ;
   row-gap: 3vh;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-evenly;
 }
 
+.search-result__image {
+  width: 90%;
+  height: auto;
+  border-radius: 6px;
+  transition: transform .2s;
+}
+
+.search-result__image:active {
+  transform: scale(1.5);
+}
+
+p {
+  font-weight: bold;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+}

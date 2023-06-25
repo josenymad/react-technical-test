@@ -12,10 +12,10 @@ const SearchResults = ({ searchResults }) => {
 
   return (
     <>
-      <p>Search Results</p>
+      <p>Click and hold the images to zoom in!</p>
       <div className="container">
         {searchResults.map((result, index) => (
-          <img src={result} alt={`Result ${index}`} key={result} />
+          <img className="search-result__image" src={result} alt={`Result ${index}`} key={result} />
         ))}
       </div>
     </>

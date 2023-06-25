@@ -13,6 +13,7 @@ const App = () => {
         src={require("../images/nasa-worm-logo.jpg")}
         alt="nasa-logo"
       />
+      <h2>This is a search engine for outer space</h2>
       <Search setSearchResults={setSearchResults} />
       <SearchResults searchResults={searchResults} />
     </div>
