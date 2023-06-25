@@ -3,19 +3,26 @@
 exports[`Search Results renders correctly 1`] = `
 <DocumentFragment>
   <p>
-    Search Results
+    Click and hold the images to zoom in!
   </p>
-  <img
-    alt="Result 0"
-    src="../images/testImage1.jpeg"
-  />
-  <img
-    alt="Result 1"
-    src="../images/testImage2.jpeg"
-  />
-  <img
-    alt="Result 2"
-    src="../images/testImage3.jpeg"
-  />
+  <div
+    class="container"
+  >
+    <img
+      alt="Result 0"
+      class="search-result__image"
+      src="../images/testImage1.jpeg"
+    />
+    <img
+      alt="Result 1"
+      class="search-result__image"
+      src="../images/testImage2.jpeg"
+    />
+    <img
+      alt="Result 2"
+      class="search-result__image"
+      src="../images/testImage3.jpeg"
+    />
+  </div>
 </DocumentFragment>
 `;

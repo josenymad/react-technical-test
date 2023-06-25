@@ -23,10 +23,10 @@ describe("Search Results", () => {
     expect(images).toHaveLength(3);
   });
 
-  it("renders 'Search Results' after searching", () => {
+  it("renders 'Click and hold the images to zoom in!' after searching", () => {
     render(<SearchResults searchResults={validProps} />);
 
-    const text = screen.getByText("Search Results");
+    const text = screen.getByText("Click and hold the images to zoom in!");
 
     expect(text).toBeInTheDocument();
   });
