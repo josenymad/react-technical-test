@@ -31,6 +31,7 @@ The API can return audio and video media too, so I would've liked to give the us
 
 https://github.com/josenymad/react-technical-test/assets/124208499/c082542c-4253-4267-9ab5-400e64479047
 
+![Screenshot 2023-06-26 at 21 13 55](https://github.com/josenymad/react-technical-test/assets/124208499/7f58d8a4-9c00-4b9a-8f59-d2d9d9b56596)
 
 
 ### Author
